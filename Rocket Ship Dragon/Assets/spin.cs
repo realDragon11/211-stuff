@@ -20,7 +20,7 @@ public class spin : MonoBehaviour
         the.transform.Rotate(new Vector3(0,0,1) *spindir,Space.Self);
         the.transform.position = new Vector3(the.transform.position.x,the.transform.position.y-.2f,0);
         if (the.transform.position.y < -10){
-        the.transform.position = new Vector3(the.transform.position.x,the.transform.position.y+20,0);
+        the.transform.position = new Vector3(Random.Range(-10f,10f),the.transform.position.y+20,0);
         }
     }
 }
